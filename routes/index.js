@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/logiciels', function(req, res, next) {
-  res.render('index', {page:'Logiciels', menuId:'logiciels'});
+  res.render('logiciels', {page:'Logiciels', menuId:'logiciels'});
 });
 
 router.get('/competences', function(req, res, next) {
