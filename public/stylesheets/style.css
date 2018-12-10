@@ -7,6 +7,36 @@
   height: 100vh;
 }
 
+/* PAGES */
+
+.titre_pages {
+
+  color: white;
+  padding-top: 8vh;
+  padding-bottom: 4vh;
+  font-size: 50px;
+}
+
+/* GRILLE PAGE COMPÉTENCES */
+.grille {
+  background-color: whitesmoke;
+  min-height: 60vh;
+  margin: 2%;
+  padding: 3%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.grille-titre {
+  font-size: 30px;
+}
+
+.pages {
+  background-color: #e7e6e7;
+  min-height: 100vh;
+  background-image: linear-gradient(#8A28B1, #BF191D);
+}
+
 .titre {
   font-size: 100px;
   color: white;
@@ -19,6 +49,12 @@
   padding: 10vh 20px 10vh 20px;
   font-size: 12pt;
   text-align: justify;
+}
+
+nav.scrolled {
+  background-color: #e7e6e7;
+  color: black;
+  transition:500ms ease-in-out;
 }
 
 /* * * * * * * * * * * *

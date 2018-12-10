@@ -11,7 +11,7 @@ router.get('/logiciels', function(req, res, next) {
 });
 
 router.get('/competences', function(req, res, next) {
-  res.render('index', {page:'Compétences', menuId:'competences'});
+  res.render('competences', {page:'Compétences', menuId:'competences'});
 });
 
 module.exports = router;
