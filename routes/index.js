@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/developpement-logiciel', function(req, res, next) {
-  res.render('developpement-logiciel/index', {page:'Logiciels', menuId:'logiciels'});
+  res.render('developpement-logiciel/index', {page:'Développement logiciel', menuId:'developpement-logiciel'});
 });
 
 router.get('/competences', function(req, res, next) {

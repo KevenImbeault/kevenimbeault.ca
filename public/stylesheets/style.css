@@ -1,6 +1,47 @@
-/* * * * * * * * *
- * D E S K T O P *
- * * * * * * * * */
+/* * * * * * * * * * * * * * * * * * * *
+ * M O B I L E - L E S S  T H A N 600PX*
+ * * * * * * * * * * * * * * * * * * * */
+
+.a_propos {
+  padding: 2vh 5vw 2vh 5vw;
+}
+
+/* * * * * * * * * * * *
+ * M O B I L E - 600PX *
+ * * * * * * * * * * * */
+
+@media only screen and (min-width: 600px) {
+  .titre {
+    font-size: 150px;
+    color: white;
+    padding-top: 10%;
+  }
+
+  .a_propos {
+    padding: 5vh 10vw 5vh 10vw;
+  }
+
+}
+
+/* * * * * * * * * * * * * * * * * * * * * * * *
+ * M O B I L E  A N D  D E S K T O P - > 990PX *
+ * * * * * * * * * * * * * * * * * * * * * * * */
+
+@media only screen and (min-width: 990px) {
+  .titre {
+    font-size: 200px;
+    color: white;
+    padding-top: 10%;
+  }
+
+  .a_propos {
+    padding: 10vh 20vw 10vh 20vw;
+  }
+}
+
+/* * * * * * * * * * * * *
+ * A L L   D E V I C E S *
+ * * * * * * * * * * * * */
 
 .acceuil {
   background-image: linear-gradient(#8A28B1, #BF191D);
@@ -15,20 +56,6 @@
   padding-top: 8vh;
   padding-bottom: 4vh;
   font-size: 50px;
-}
-
-/* GRILLE PAGE COMPÉTENCES */
-.grille {
-  background-color: whitesmoke;
-  min-height: 60vh;
-  margin: 2%;
-  padding: 3%;
-  text-align: center;
-  border-radius: 5px;
-}
-
-.grille-titre {
-  font-size: 30px;
 }
 
 .projet_github {
@@ -63,8 +90,7 @@
 
 .a_propos {
   background-color: #e7e6e7;
-  height: 50vh;
-  padding: 10vh 20px 10vh 20px;
+  min-height: 50vh;
   font-size: 12pt;
   text-align: justify;
 }
@@ -72,40 +98,7 @@
 nav.scrolled {
   background-color: #e7e6e7;
   color: black;
-  transition:500ms ease-in-out;
-}
-
-/* * * * * * * * * * * *
- * M O B I L E - 600PX *
- * * * * * * * * * * * */
-
-@media only screen and (min-width: 600px) {
-  .titre {
-    font-size: 150px;
-    color: white;
-    padding-top: 10%;
-  }
-
-  .a_propos {
-    padding: 15vh;
-  }
-
-}
-
-/* * * * * * * * * * * *
- * M O B I L E - 990PX *
- * * * * * * * * * * * */
-
-@media only screen and (min-width: 990px) {
-  .titre {
-    font-size: 200px;
-    color: white;
-    padding-top: 10%;
-  }
-
-  .a_propos {
-    padding: 15vh;
-  }
+  transition:300ms ease-in-out;
 }
 
 .projets {
@@ -166,4 +159,34 @@ nav.scrolled {
   50% {
     transform: translate(0, 10px);
   }
+}
+
+.twitter:hover {
+  color: #1da1f2;
+  transition:100ms ease-in-out;
+}
+
+.instagram:hover {
+  color: #405de6;
+  transition:100ms ease-in-out;
+}
+
+.linkedin:hover {
+  color: #0077b5;
+  transition:100ms ease-in-out;
+}
+
+.github:hover {
+  color: #6e5494;
+  transition:100ms ease-in-out;
+}
+
+.facebook:hover {
+  color: #3b5998;
+  transition:100ms ease-in-out;
+}
+
+.mail:hover {
+  color: #ea4335;
+  transition:100ms ease-in-out;
 }
