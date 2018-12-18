@@ -1,0 +1,66 @@
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+<% include ../partials/menu %>
+<div class="pages">
+    <p class="titre_pages text-center">Blog</p>
+
+    <div class="container">
+        <% posts.forEach(function(post) { %>
+
+                <div class="row Blog_Post">
+                    <div class="col-4">
+                        <img src=<%= post.featured_image %>>
+                    </div>
+                    <div class="col-6">
+                        <p class="Blog_Post_Titre"><%= post.title %></p>
+                        <p>
+                            Publié le <%= post.published.slice(8, 10) %>
+                            <% if (post.published.slice(5, 7) == '1') { %>
+                                janvier
+                            <% } else if (post.published.slice(5, 7) == '2') {%>
+                                février
+                            <% } else if (post.published.slice(5, 7) == '3') {%>
+                                mars
+                            <% } else if (post.published.slice(5, 7) == '4') {%>
+                                avril
+                            <% } else if (post.published.slice(5, 7) == '5') {%>
+                                mai
+                            <% } else if (post.published.slice(5, 7) == '6') {%>
+                                juin
+                            <% } else if (post.published.slice(5, 7) == '7') {%>
+                                juillet
+                            <% } else if (post.published.slice(5, 7) == '8') {%>
+                                août
+                            <% } else if (post.published.slice(5, 7) == '9') {%>
+                                septembre
+                            <% } else if (post.published.slice(5, 7) == '10') {%>
+                                octobre
+                            <% } else if (post.published.slice(5, 7) == '11') {%>
+                                novembre
+                            <% } else if (post.published.slice(5, 7) == '12') {%>
+                                décembre
+                            <% } %>
+                            <%= post.published.slice(0, 4) %>
+                        </p>
+                        <p><%= post.summary %></p>
+                    </div>
+                    <div class="col-2">
+                        <p class="text-center"><a class="Blog_Post_Link" href="/blog/<%= post.slug %>">Lire la suite</a></p>
+                    </div>
+                </div>
+        <% }); %>
+        <% if (previous_page) { %>
+            <a href="/blog/p/<%= previous_page %>">Prev</a>
+        <% } %>
+
+        <% if (next_page) { %>
+            <a href="/blog/p/<%= next_page %>">Next</a>
+        <% } %>
+    </div>
+</div>
+<% include ../partials/footer %>
+</body>
+<% include ../partials/script %>
+</html>

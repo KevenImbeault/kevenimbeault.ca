@@ -1,0 +1,47 @@
+<head>
+    <% include ../partials/head %>
+    <link rel="stylesheet" href="./../stylesheets/style.css">
+</head>
+<body>
+    <% include ../partials/blog_menu %>
+    <div class="Blog_Contenu">
+        <p class="Titre_Blog text-center"><%= post.title %></p>
+        <p class="Blog_Date">
+            Publié le <%= published.getDate() %>
+            <% if (post.published.slice(5, 7) == '1') { %>
+                janvier
+            <% } else if (published.getMonth()+1 == '2') {%>
+                février
+            <% } else if (published.getMonth()+1 == '3') {%>
+                mars
+            <% } else if (published.getMonth()+1 == '4') {%>
+                avril
+            <% } else if (published.getMonth()+1 == '5') {%>
+                mai
+            <% } else if (published.getMonth()+1 == '6') {%>
+                juin
+            <% } else if (published.getMonth()+1 == '7') {%>
+                juillet
+            <% } else if (published.getMonth()+1 == '8') {%>
+                août
+            <% } else if (published.getMonth()+1 == '9') {%>
+                septembre
+            <% } else if (published.getMonth()+1 == '10') {%>
+                octobre
+            <% } else if (published.getMonth()+1 == '11') {%>
+                novembre
+            <% } else if (published.getMonth()+1 == '12') {%>
+                décembre
+            <% } %>
+            <%= published.getFullYear() %>
+        </p>
+        <br>
+
+        <div class="Blog_Texte">
+            <%- post.body %>
+        </div>
+    </div>
+<% include ../partials/footer %>
+</body>
+<% include ../partials/script %>
+</html>
