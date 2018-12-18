@@ -56,7 +56,7 @@
 }
 
 .Accueil_A_Propos {
-  background-color: #e7e6e7;
+  background-color: white;
   min-height: 50vh;
   font-size: 12pt;
   text-align: justify;
@@ -80,7 +80,7 @@
 
 /* N A V I G A T I O N*/
 nav.scrolled {
-  background-color: #e7e6e7;
+  background-color: white;
   color: black;
   transition:300ms ease-in-out;
 }
@@ -153,9 +153,14 @@ nav.scrolled {
 }
 
 .competences {
-  height: 25vh;
-  background-color: #2c2b2c;
-  color:white;
+  min-height: 25vh;
+  background-color: white;
+  color:black;
+  padding-bottom: 5vh;
+}
+
+.competences .titre_pages {
+  color:black;
 }
 
 .pages {
