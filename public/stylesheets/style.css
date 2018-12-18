@@ -91,14 +91,14 @@ nav.scrolled {
 }
 
 .liens {
-  height: 50vh;
+  height: 30vh;
   background-color: #2c2b2c;
   color: white;
 }
 
 .icones {
-  padding-top: 15vh;
-  padding-bottom: 5vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
 }
 
 .icones a {
@@ -165,13 +165,13 @@ nav.scrolled {
 
 /* P R O J E T S*/
 .projet {
-  background-color: rgba(38, 38, 38, 0.59);
+  background-color: white;
   height: 250px;
   border-radius: 5px;
-  border: 1px solid white;
+  border: 1px solid black;
   padding:3% 2% 2% 2%;
   margin-bottom:5vh;
-  color:white;
+  color:black;
 }
 
 .projet_langages {
@@ -179,16 +179,16 @@ nav.scrolled {
 }
 
 .projet a {
-  color: white;
-  border: 1px solid white;
+  color: black;
+  border: 1px solid black;
   border-radius: 5px;
   vertical-align: middle;
   padding:10px;
 }
 
 .projet a:hover {
-  background-color:white;
-  color:black;
+  background-color:black;
+  color:white;
   text-decoration: none;
 
   transition:300ms ease-in-out;
