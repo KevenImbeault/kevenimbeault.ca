@@ -1,10 +1,12 @@
+<% var rootpath = '../' %>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <% include ../partials/head %>
+    <%- include(rootpath + 'partials/head'); %>
 </head>
 <body>
-<% include ../partials/menu %>
+<%- include(rootpath + 'partials/menu'); %>
 <div class="pages text-center">
     <p class="titre_pages">Développement logiciel</p>
 
@@ -29,7 +31,7 @@
         </div>
     </div>
 </div>
-<% include ../partials/footer %>
+<%- include(rootpath + 'partials/footer'); %>
 </body>
-<% include ../partials/script %>
+<%- include(rootpath + 'partials/script'); %>
 </html>

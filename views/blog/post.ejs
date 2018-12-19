@@ -1,9 +1,10 @@
+<% var rootpath = '../' %>
+
 <head>
-    <% include ../partials/head %>
-    <link rel="stylesheet" href="./../stylesheets/style.css">
+    <%- include(rootpath + 'partials/head'); %>
 </head>
 <body>
-    <% include ../partials/blog_menu %>
+<%- include(rootpath + 'partials/blog_menu'); %>
     <div class="Blog_Contenu">
         <p class="Titre_Blog text-center"><%= post.title %></p>
         <p class="Blog_Date">
@@ -41,7 +42,7 @@
             <%- post.body %>
         </div>
     </div>
-<% include ../partials/footer %>
+<%- include(rootpath + 'partials/footer'); %>
 </body>
-<% include ../partials/script %>
+<%- include(rootpath + 'partials/script'); %>
 </html>
