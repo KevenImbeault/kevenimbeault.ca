@@ -3,10 +3,10 @@
 <head>
     <%- include(rootpath + 'partials/head'); %>
 </head>
-<body class="Blog_Fond">
+<body class="Blog_Page_Fond">
 <%- include(rootpath + 'partials/menu'); %>
-    <div class="Blog_Contenu">
-        <p class="Titre_Blog text-center"><%= post.title %></p>
+    <div class="Blog_Page_Contenu">
+        <p class="titre_pages"><%= post.title %></p>
         <p class="Blog_Date">
             Publié le <%= published.getDate() %>
             <% if (post.published.slice(5, 7) == '1') { %>
