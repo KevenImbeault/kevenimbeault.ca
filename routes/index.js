@@ -11,6 +11,10 @@ router.get('/developpement-logiciel', function(req, res, next) {
   res.render('developpement-logiciel/index', {page:'Développement logiciel', menuId:'developpement-logiciel'});
 });
 
+router.get('/login', function(req, res, next) {
+  res.render('login/index', {page:'Login', menuId:'login'})
+});
+
 router.get('/blog', function(req, res, next) {
     var page = req.params.page || 1;
 
